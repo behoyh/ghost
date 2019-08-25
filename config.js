@@ -39,13 +39,15 @@ exports.production = {
     // (i.e mysql or postgres), so that your content is persisted throughout
     // multiple deployments / instances / upgrades.
     // http://www.fastcomet.com/tutorials/ghost/configure-mysql-database
-    "database": {
-      "client": "sqlite3",
-      "connection": {
-          "filename": "content/data/ghost-test.db"
-      },
-      "useNullAsDefault": true,
-      "debug": false
+    database: {
+        client: 'mysql',
+        connection: {
+            host: 'graceful-earth-237513:us-central1:paul3857-f25f-van8-961e-a507d11bb136dyk',
+            user: 'root',
+            password: 'E5vatqtgpvsjE1pe',
+            charset: 'utf8'
+        },
+        debug: false
     },
 
     // #### Use persistent file storage? (No, for Now.sh)
@@ -59,7 +61,7 @@ exports.production = {
     //
     // I recommend using https://cloudup.com/ for image hosting
     // with Direct URL (hotlinking) access.
-    fileStorage: true,
+    fileStorage: false,
 
     // #### Server
     // http://support.ghost.org/config/#server
