@@ -6,7 +6,7 @@ This repository contains **Dockerfile** of [Ghost](https://www.ghost.org/) for [
 
 ### Base Docker Image
 
-* [dockerfile/nodejs](http://dockerfile.github.io/#/nodejs)
+* [node](https://hub.docker.com/_/node)
 
 ## 1-Click Deploy
 
