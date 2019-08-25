@@ -8,6 +8,9 @@ This repository contains **Dockerfile** of [Ghost](https://www.ghost.org/) for [
 
 * [dockerfile/nodejs](http://dockerfile.github.io/#/nodejs)
 
+## 1-Click Deploy
+
+[![Run on Google Cloud](https://storage.googleapis.com/cloudrun/button.svg)](https://console.cloud.google.com/cloudshell/editor?shellonly=true&cloudshell_image=gcr.io/cloudrun/button&cloudshell_git_repo=https://github.com/behoyh/ghost.git)
 
 ### Installation
 
