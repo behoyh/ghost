@@ -15,8 +15,9 @@ RUN \
   rm -f ghost-latest.zip && \
   cd /ghost && \
   npm install --production && \
-  sed 's/127.0.0.1/0.0.0.0/' /ghost/config.example.js > /ghost/config.js && \
-  useradd ghost --home /ghost
+  sed 's/127.0.0.1/0.0.0.0/' /ghost/config.example.js > /ghost/config.js
+  
+RUN useradd ghost --home /ghost
 
 # Add files.
 ADD start.bash /ghost-start
