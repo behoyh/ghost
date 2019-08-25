@@ -17,7 +17,7 @@ RUN \
   rm -f ghost-latest.zip && \
   cd /ghost && \
   npm install --production && \
-  mv /temp/config.js /ghost/config.js
+  mv /temp/config.js /ghost
 
 RUN useradd ghost --home /ghost
 
