@@ -7,7 +7,7 @@
 # Pull base image.
 FROM node
 
-COPY ./config.js /ghost
+COPY ./config.js /temp
 
 # Install Ghost
 RUN \
@@ -17,6 +17,7 @@ RUN \
   rm -f ghost-latest.zip && \
   cd /ghost && \
   npm install --production && \
+  sed 's/127.0.0.1/0.0.0.0/' /temp/config.js > /ghost/config.js
   useradd ghost --home /ghost
 
 # Add files.
