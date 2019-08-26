@@ -1,19 +1,14 @@
 {
-    "url": "<public-url>",
+    "url": "https://generated-url.com",
 
     "database": {
-        "client": "mysql",
+        "client": "sqlite3",
         "connection": {
-            "host": "<host>",
-            "user": "<user>",
-            "password": "<password>",
-            "charset": "utf8",
-            "database": "<database-name>"
+          "filename": "content/data/ghost-test.db"
         },
+        "useNullAsDefault": true,
         "debug": false
-    },
-
-   
+    }, 
     "fileStorage": false,
 
     "server": {
