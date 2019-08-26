@@ -1,6 +1,4 @@
 {
-    "url": "https://generated-url.com",
-
     "database": {
         "client": "sqlite3",
         "connection": {
