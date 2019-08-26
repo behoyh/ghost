@@ -1,7 +1,7 @@
 ## Ghost Dockerfile
 
 
-This repository contains **Dockerfile** of [Ghost](https://www.ghost.org/) for [Docker](https://www.docker.com/)'s [automated build](https://registry.hub.docker.com/u/dockerfile/ghost/) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
+This repository contains **Dockerfile** of [Ghost](https://www.ghost.org/) for [Docker](https://www.docker.com/)'s [automated build](https://registry.hub.docker.com/u/behoyh/ghost/) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
 
 
 ### Base Docker Image
@@ -16,18 +16,18 @@ This repository contains **Dockerfile** of [Ghost](https://www.ghost.org/) for [
 
 1. Install [Docker](https://www.docker.com/).
 
-2. Download [automated build](https://registry.hub.docker.com/u/dockerfile/ghost/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull dockerfile/ghost`
+2. Download [automated build](https://registry.hub.docker.com/u/behoyh/ghost/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull behoyh/ghost`
 
-   (alternatively, you can build an image from Dockerfile: `docker build -t="dockerfile/ghost" github.com/dockerfile/ghost`)
+   (alternatively, you can build an image from Dockerfile: `docker build -t="behoyh/ghost" github.com/behoyh/ghost`)
 
 
 ### Usage
 
-    docker run -d -p 80:2368 dockerfile/ghost
+    docker run -d -p 80:2368 behoyh/ghost
 
 #### Customizing Ghost
 
-    docker run -d -p 80:2368 -v <override-dir>:/ghost-override dockerfile/ghost
+    docker run -d -p 80:2368 -v <override-dir>:/ghost-override behoyh/ghost
 
 where `<override-dir>` is an absolute path of a directory that could contain:
 
