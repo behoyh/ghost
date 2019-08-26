@@ -7,8 +7,6 @@
 # Pull base image.
 FROM node
 
-COPY ./config.js /temp/ghost
-
 # Install Ghost
 RUN \
   cd /tmp && \
@@ -16,13 +14,14 @@ RUN \
   unzip ghost-latest.zip -d /ghost && \
   rm -f ghost-latest.zip && \
   cd /ghost && \
-  npm install --production && \
-  mv /temp/ghost /ghost
+  npm install --production
 
 RUN useradd ghost --home /ghost
 
 # Add files.
 ADD start.bash /ghost-start
+ADD ./config.development.json /ghost
+ADD ./config.production.json /ghost
 
 # Set environment variables.
 ENV NODE_ENV production

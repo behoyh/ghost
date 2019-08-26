@@ -1,0 +1,23 @@
+{
+    "url": "<public-url>",
+
+    "database": {
+        "client": "mysql",
+        "connection": {
+            "host": "<host>",
+            "user": "<user>",
+            "password": "<password>",
+            "charset": "utf8",
+            "database": "<database-name>"
+        },
+        "debug": false
+    },
+
+   
+    "fileStorage": false,
+
+    "server": {
+        "host": "0.0.0.0",
+        "port": "2368"
+    }
+}

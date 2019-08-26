@@ -1,0 +1,20 @@
+{
+    "url": "<public-url>",
+
+    "database": {
+        "client": "sqlite3",
+        "connection": {
+          "filename": "content/data/ghost-test.db"
+        },
+        "useNullAsDefault": true,
+        "debug": false
+    },
+
+   
+    "fileStorage": false,
+
+    "server": {
+        "host": "0.0.0.0",
+        "port": "2368"
+    }
+}
