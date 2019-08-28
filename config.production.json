@@ -1,7 +1,7 @@
 {
     "url": "<url>",
     "database": {
-        "client": "mysql",
+        "client": "sqlite3",
         "connection": {
             "host": "<host>",
             "port": 3306,
