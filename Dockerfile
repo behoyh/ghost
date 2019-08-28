@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM node
+FROM node:10.15.0
 
 # Install Ghost
 RUN \
@@ -16,12 +16,20 @@ RUN \
   cd /ghost && \
   npm install --production
 
+# Install Google Drive Integration
+RUN cd /ghost && \
+    mkdir content/adapters/storage && \
+    cd /ghost/content/adapters/storage && \
+    git clone https://github.com/robincsamuel/ghost-google-drive.git && \
+    cd ghost-google-drive && \
+    npm install
+
 RUN useradd ghost --home /ghost
 
 # Add files.
 ADD start.bash /ghost-start
-ADD ./config.development.json /ghost
 ADD ./config.production.json /ghost
+ADD ./config.development.json /ghost
 
 # Set environment variables.
 ENV NODE_ENV production
@@ -36,4 +44,4 @@ WORKDIR /ghost
 CMD ["bash", "/ghost-start"]
 
 # Expose ports.
-EXPOSE 2368
+EXPOSE 8080
