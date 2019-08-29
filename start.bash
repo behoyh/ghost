@@ -3,7 +3,7 @@
 GHOST="/ghost"
 OVERRIDE="/ghost-override"
 
-CONFIG="config.js"
+CONFIG="config.production.json"
 DATA="content/data"
 IMAGES="content/images"
 THEMES="content/themes"
@@ -36,7 +36,7 @@ if [[ -d "$OVERRIDE/$THEMES" ]]; then
 fi
 
 # Start Ghost
-chown -R ghost:ghost /data /ghost /ghost-override
+chown -R ghost:ghost /ghost /ghost-override
 su ghost << EOF
 cd "$GHOST"
 NODE_ENV=${NODE_ENV:-production} npm start

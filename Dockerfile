@@ -28,14 +28,12 @@ RUN useradd ghost --home /ghost
 
 # Add files.
 ADD start.bash /ghost-start
-ADD ./config.production.json /ghost
-ADD ./config.development.json /ghost
 
 # Set environment variables.
 ENV NODE_ENV production
 
-# Define mountable directories.
-VOLUME ["/data", "/ghost-override"]
+# Copy to override.
+COPY ./data /ghost-override
 
 # Define working directory.
 WORKDIR /ghost
