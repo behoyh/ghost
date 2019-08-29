@@ -23,11 +23,11 @@ This repository contains **Dockerfile** of [Ghost](https://www.ghost.org/) for [
 
 ### Usage
 
-    docker run -d -p 80:2368 behoyh/ghost
+    docker run -d -p 80:8080 behoyh/ghost
 
 #### Customizing Ghost
 
-    docker run -d -p 80:2368 -v <override-dir>:/ghost-override behoyh/ghost
+    docker run -d -p 80:8080 -v <override-dir>:/ghost-override behoyh/ghost
 
 where `<override-dir>` is an absolute path of a directory that could contain:
 
