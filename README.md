@@ -21,8 +21,8 @@ This repository contains **Dockerfile** of [Ghost](https://www.ghost.org/) for [
    (alternatively, you can build an image from Dockerfile: `docker build -t="behoyh/ghost" github.com/behoyh/ghost`)
 
 #### Customizing Ghost
-
-    Add override files in the /data directory of the repo.
+   
+   Add override files in the /data directory of the repo.
 
 ### Usage
 
