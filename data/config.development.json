@@ -1,5 +1,5 @@
 {
-    "url": "https://ghost-hicsxm6moa-uc.a.run.app",
+    "url": "https://localhost",
 
     "database": {
         "client": "sqlite3",
