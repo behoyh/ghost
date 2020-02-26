@@ -30,7 +30,7 @@ RUN useradd ghost --home /ghost
 ADD start.bash /ghost-start
 
 # Set environment variables.
-ENV NODE_ENV production
+ENV NODE_ENV development
 
 # Copy to override.
 COPY ./data /ghost-override
