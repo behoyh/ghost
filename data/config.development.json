@@ -1,5 +1,5 @@
 {
-    "url": "https://localhost",
+    "url": "http://localhost",
 
     "database": {
         "client": "sqlite3",
