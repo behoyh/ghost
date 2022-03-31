@@ -3,7 +3,7 @@
 GHOST="/ghost"
 OVERRIDE="/ghost-override"
 
-CONFIG="config.production.json"
+CONFIG="config.development.json"
 DATA="content/data"
 IMAGES="content/images"
 THEMES="content/themes"

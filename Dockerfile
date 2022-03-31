@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM node:10.15.0
+FROM node:16
 
 # Install Ghost
 RUN \
@@ -40,6 +40,3 @@ WORKDIR /ghost
 
 # Define default command.
 CMD ["bash", "/ghost-start"]
-
-# Expose ports.
-EXPOSE 8080
