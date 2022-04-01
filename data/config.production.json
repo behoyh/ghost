@@ -8,10 +8,13 @@
             "user": "<user>",
             "password": "<password>",
             "database": "<database>",
-            "ssl": true
+            "ssl": {
+                "cert": "<database_cert>",
+                "ca": "<database_ca>",
+                "key": "<database_key>"
+            }
         }
     },
-    "fileStorage": false,
     "storage": {
         "active": "ghost-google-drive",
         "ghost-google-drive": {
@@ -26,7 +29,7 @@
                 "token_uri": "<token_uri>",
                 "auth_provider_x509_cert_url": "<auth_provider_x509_cert_url>",
                 "client_x509_cert_url": "<client_x509_cert_url>"
-              }
+            }
         }
     },
     "mail": {
@@ -44,6 +47,6 @@
     },
     "server": {
         "host": "0.0.0.0",
-        "port": "8080"
+        "port": "80"
     }
 }
