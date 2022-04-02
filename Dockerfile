@@ -14,7 +14,7 @@ RUN \
 RUN cd /ghost && \
     mkdir content/adapters/storage && \
     cd /ghost/content/adapters/storage && \
-    git clone https://github.com/behoyh/ghost-google-drive.git && \
+    git clone https://github.com/robincsamuel/ghost-google-drive.git && \
     cd ghost-google-drive && \
     npm install
 
