@@ -1,7 +1,7 @@
 ## Ghost Dockerfile
 
 
-This repository contains **Dockerfile** of [Ghost](https://www.ghost.org/) for [Docker](https://www.docker.com/)'s [automated build](https://registry.hub.docker.com/u/behoyh/ghost/) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
+[Ghost](https://www.ghost.org/) for [Docker](https://www.docker.com/).
 
 
 ### Base Docker Image
