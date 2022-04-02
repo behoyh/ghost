@@ -1,7 +1,7 @@
 ## Ghost Dockerfile
 
 
-[Ghost](https://www.ghost.org/) for [Docker](https://www.docker.com/).
+[Ghost](https://www.ghost.org/) for [Docker](https://www.docker.com/). Allows custom settings (databases, plugins) in a simple and easy-to-use Dockerfile.
 
 
 ### Base Docker Image
