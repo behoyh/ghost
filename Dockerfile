@@ -1,9 +1,3 @@
-#
-# Ghost Dockerfile
-#
-# https://github.com/dockerfile/ghost
-#
-
 # Pull base image.
 FROM node:16
 
