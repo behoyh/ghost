@@ -3,7 +3,7 @@
 GHOST="/ghost"
 OVERRIDE="/ghost-override"
 
-CONFIG="config.development.json"
+CONFIG="config.$NODE_ENV.json"
 DATA="content/data"
 IMAGES="content/images"
 THEMES="content/themes"
