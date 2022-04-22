@@ -1,5 +1,5 @@
 # Pull base image.
-FROM node:lts-alpine
+FROM node:16
 
 # Install Ghost
 RUN \
@@ -10,9 +10,6 @@ RUN \
   cd /ghost && \
   npm install --production
 
-# Install git
-RUN apk add git
-
 # Install Google Drive Integration
 RUN cd /ghost && \
     mkdir content/adapters/storage && \
@@ -21,10 +18,10 @@ RUN cd /ghost && \
     cd ghost-google-drive && \
     npm install
 
-RUN adduser ghost -D --home /ghost
+RUN useradd ghost --home /ghost
 
 # Add files.
-ADD start.sh /ghost-start
+ADD start.bash /ghost-start
 
 # Set environment variables.
 ENV NODE_ENV development
@@ -36,4 +33,4 @@ COPY ./data /ghost-override
 WORKDIR /ghost
 
 # Define default command.
-CMD ["sh", "/ghost-start"]
+CMD ["bash", "/ghost-start"]

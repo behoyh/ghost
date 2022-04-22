@@ -5,6 +5,7 @@ OVERRIDE="/ghost-override"
 
 CONFIG="config.$NODE_ENV.json"
 DATA="content/data"
+SETTINGS="content/settings"
 IMAGES="content/images"
 THEMES="content/themes"
 
@@ -15,7 +16,12 @@ mkdir -p "$OVERRIDE/$DATA"
 rm -fr "$DATA"
 ln -s "$OVERRIDE/$DATA" "content"
 
-# Symlink images directory
+# Symlink settings directory.
+mkdir -p "$OVERRIDE/$SETTINGS"
+rm -fr "$SETTINGS"
+ln -s "$OVERRIDE/$SETTINGS" "$SETTINGS"
+
+# Symlink images directory.
 mkdir -p "$OVERRIDE/$IMAGES"
 rm -fr "$IMAGES"
 ln -s "$OVERRIDE/$IMAGES" "$IMAGES"
