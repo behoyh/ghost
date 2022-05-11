@@ -22,7 +22,11 @@
 
 #### Customizing Ghost
    
-   Add override files in the /data directory of the repo.
+   Add override files in the /data directory of the repo. Treat this as the root ghost folder. If you'd like to override content/data place a content folder like so:
+   
+   <img width="350" alt="image" src="https://user-images.githubusercontent.com/2565745/167858937-b102cbc4-9e67-4217-8edc-16980bb9a025.png">
+   
+(yes, it's a bit unintuitive to place `/content/data` in `/data`)
 
 ### Usage
 
