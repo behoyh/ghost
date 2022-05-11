@@ -16,7 +16,7 @@ WORKDIR /ghost
 
 # Install Ghost
 RUN echo '' | sudo -S npm install ghost-cli@latest -g && \
-    ghost install --db=sqlite3 --url http://mysite.com --no-prompt --no-stack --no-setup --no-start
+    ghost install "$GHOST_VERSION" --db=sqlite3 --no-prompt --no-stack --no-setup --no-start
 
 # Install Google Drive Integration
 RUN mkdir /ghost/versions/"$GHOST_VERSION"/content/adapters/storage && \
