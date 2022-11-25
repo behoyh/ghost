@@ -4,7 +4,7 @@ The purpose of this repo is to provide an easy and repeatable way to customize a
 
 Any themes, settings, routes, redirects, ect will be written to the ghost install as if it was in the ghost root directory. This is useful because a ghost install may require some setup and switching providers would only require a image pull.
 
-You can test out a ghost install on your local machine, for example and deploy to a virtual machine on a service provider for production.
+You can test out a ghost install on your local machine, for example and deploy to a virtual machine or a rasberry pi for production.
 
 
 ### Base Docker Image
