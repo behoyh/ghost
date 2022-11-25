@@ -1,16 +1,15 @@
-## Ghost Dockerfile
+## Ghost Docker
 
+The purpose of this repo is to provide an easy and repeatable way to customize a ghost install.
 
-[Ghost](https://www.ghost.org/) for [Docker](https://www.docker.com/). Allows custom settings (databases, plugins) in a simple and easy-to-use Dockerfile.
+Any themes, settings, routes, redirects, ect will be written to the ghost install as if it was in the ghost root directory. This is useful because a ghost install may require some setup and switching providers would only require a image pull.
+
+You can test out a ghost install on your local machine, for example and deploy to a virtual machine on a service provider for production.
 
 
 ### Base Docker Image
 
 * [node](https://hub.docker.com/_/node)
-
-## 1-Click Deploy
-
-[![Run on Google Cloud](https://storage.googleapis.com/cloudrun/button.svg)](https://console.cloud.google.com/cloudshell/editor?shellonly=true&cloudshell_image=gcr.io/cloudrun/button&cloudshell_git_repo=https://github.com/behoyh/ghost.git)
 
 ### Installation
 
