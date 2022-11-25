@@ -1,6 +1,6 @@
 # Pull base image.
 FROM node:16
-ARG GHOST_VERSION=4.47.1
+ARG GHOST_VERSION=5.23.0
 
 # Install sudo
 RUN apt update && \

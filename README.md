@@ -30,6 +30,6 @@
 
 ### Usage
 
-    docker run -d -p 80:80 behoyh/ghost
+    docker run -p 80:80 behoyh/ghost
 
 After few seconds, open `http://<host>` for blog or `http://<host>/ghost` for admin page.
