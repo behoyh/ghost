@@ -1,6 +1,6 @@
 ## Ghost Docker
 
-The purpose of this repo is to provide an easy and repeatable way to customize a ghost install.
+The purpose of this repo is to provide an easy and repeatable way to customize a [ghost](https://ghost.org) install.
 
 Any themes, settings, routes, redirects, ect will be written to the ghost install as if it was in the ghost root directory. This is useful because a ghost install may require some setup and switching providers would only require a image pull.
 
